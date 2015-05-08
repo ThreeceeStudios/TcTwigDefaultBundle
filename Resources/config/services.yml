@@ -1,0 +1,11 @@
+parameters:
+
+    tc.twig_default.twig_extension.class: Tc\Bundle\TwigDefault\Twig\Extension\TwigDefaultExtension
+
+services:
+
+    tc.twig_default.twig_extension:
+        class: %tc.twig_default.twig_extension.class%
+        public: false
+        tags:
+            - { name: twig.extension }
